@@ -7,7 +7,7 @@ find $fpath -type f -mtime +7  -exec rm -rf {} \;
 count=$(cat /tmp/file.out | wc -l)
 if [ "$prev_count" -lt "$count" ] ; then
 MESSAGE="/tmp/file1.out"
-TO="rizki.faza@livecom.com"
+TO="user@mail.com"
 echo "Systems log files are deleted older than 7 days"  >> $MESSAGE
 echo "+--------------------------------------------- +" >> $MESSAGE
 echo "" >> $MESSAGE
